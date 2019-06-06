@@ -1,1 +1,0 @@
-API_KEY=45883541 API_SECRET=0493c25e6e61f8ef4e8d2ec0999f5df762a20e41 PORT=3001 SIP_URI="sip:300907@uams.edu;transport=tcp"  npm start
