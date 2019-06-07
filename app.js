@@ -56,6 +56,7 @@ app.post('/sip/start', function (req, res) {
   if (req.body.sipTarget) {
     sipUri = 'sip:' + req.body.sipTarget;
   }
+  console.log("here's the SIP URI: " + sipUri);
   opentok.dial(req.body.sessionId, sipToken, sipUri, {
     //auth: {
     //   username: config.sipUsername,
