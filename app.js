@@ -7,7 +7,7 @@ var config = require('./config');
 var OpenTok = require('./lib/opentok');
 
 var app = express();
-var opentok = new OpenTok(config.apiKey, config.apiSecret, 'https://preview.opentok.com');
+var opentok = new OpenTok(config.apiKey, config.apiSecret, 'https://anvil-preview.opentok.com');
 var sessionId;
 var webrtcToken;
 var sipToken;
