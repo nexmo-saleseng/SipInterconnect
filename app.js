@@ -61,7 +61,7 @@ app.post('/sip/start', function (req, res) {
     //   username: config.sipUsername,
     //   password: config.sipPassword
     // },
-    video: true,
+    //video: true,
     headers: config.sipHeaders
   }, function (err, sipCall) {
     if (err) {
