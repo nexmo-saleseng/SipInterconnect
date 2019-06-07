@@ -57,10 +57,10 @@ app.post('/sip/start', function (req, res) {
     sipUri = 'sip:' + req.body.sipTarget;
   }
   opentok.dial(req.body.sessionId, sipToken, sipUri, {
-    auth: {
-       username: config.sipUsername,
-       password: config.sipPassword
-    },
+    //auth: {
+    //   username: config.sipUsername,
+    //   password: config.sipPassword
+    //},
     video: true,
     headers: config.sipHeaders
   }, function (err, sipCall) {
